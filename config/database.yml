@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: mebay
+  pool: 5
+  username: bmrocha #nome do banco de dados ****
+  password: 123456  #sua senha do banco de dados *****
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: mebay_test
+  pool: 5
+  username: bmrocha
+  password: 123456

@@ -1,0 +1,17 @@
+<html>
+        <head>
+                <title></title>
+        </head>
+                <body>
+                        <h1>Todos os anúncios </h1>
+                        <ul>
+                                 <% @ads.each do |ad| %>
+                                          <li><%= link_to ad.name, ad %></li>
+                                 <% end %>
+                        </ul>
+                        <%= link_to 'Novo Anúncio' , new_ad_path %>
+                </body>
+</html>
+
+
+

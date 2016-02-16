@@ -1,0 +1,32 @@
+<%= form_for(@ad) do |f| %>
+    <div class= "field">
+        <%= f.label "Nome" %><br>
+        <%= f.text_field :name %>
+    </div>
+
+    <div class= "field">
+        <%= f.label "Descrição" %><br>
+        <%= f.text_field :description%>
+    </div>
+
+
+    <div class= "field">
+        <%= f.label "Preço" %><br>
+        <%= f.text_field :price %>
+    </div>
+
+    <div class= "field">
+        <%= f.label "Id Vendedor" %><br>
+        <%= f.text_field :seller_id %>
+    </div>
+
+    <div class= "field">
+        <%= f.label "Email" %><br>
+        <%= f.text_field :email %>
+    </div>
+
+    <div class="actions">
+        <%= f.submit "Salvar Anúncio" %>
+    </div>
+
+<% end %>
